@@ -1,14 +1,8 @@
 defmodule Cards do
 
-  def hello do
-    "hi there!"
-
-  end
-
   def create_deck do
     values = ["Ace", "Two", "Three", "Four", "Five"]
     suits = ["Spades", "Clubs", "Hearts", "Diamonds"]
-
     for suit <- suits, value <- values do #Single list with all combinations
         "#{value} of #{suit}"
     end
@@ -35,12 +29,16 @@ defmodule Cards do
   end
 
   def load(filename) do
-    {status, binary} = File.read(filename)
-
-    case status do #Works like an if statement.
-      :ok -> :erlang.binary_to_term(binary)
-      :error -> "That file does not exist"
+    case File.read(filename) do #Works like an if statement.
+      {:ok, binary} -> :erlang.binary_to_term(binary)
+      {:error, _reason} -> "That file does not exist"
     end
+  end
+
+  def create_hand(hand_size) do
+    Cards.create_deck
+    |> Cards.shuffle #pipe operator
+    |> Cards.deal(hand_size) #pipe operator asigns the other param of deal
   end
 
 end
