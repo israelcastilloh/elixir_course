@@ -1,8 +1,11 @@
 # Identicon
 
+<p align="center">
 <img align="center" src="https://raw.githubusercontent.com/israelcastilloh/elixir_course/master/identicon/israel.png">
+</p>
 
-**TODO: Add description**
+
+**TODO: Finished**
 
 ## Installation
 
