@@ -1,8 +1,7 @@
 # Identicon
 
-<p align="center">
-![alt text](https://raw.githubusercontent.com/israelcastilloh/elixir_course/master/identicon/israel.png)
-</p>
+<img align="centered" src="https://raw.githubusercontent.com/israelcastilloh/elixir_course/master/identicon/israel.png">
+
 **TODO: Add description**
 
 ## Installation
