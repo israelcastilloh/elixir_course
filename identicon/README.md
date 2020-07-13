@@ -1,6 +1,6 @@
 # Identicon
 
-<img align="centered" src="https://raw.githubusercontent.com/israelcastilloh/elixir_course/master/identicon/israel.png">
+<img align="center" src="https://raw.githubusercontent.com/israelcastilloh/elixir_course/master/identicon/israel.png">
 
 **TODO: Add description**
 
