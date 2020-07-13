@@ -1,4 +1,4 @@
-<div align="center"> # Identicon </div>
+<div align="center"><h1>Identicon</h1></div>
 
 
 <p align="center">
