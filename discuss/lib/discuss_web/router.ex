@@ -1,5 +1,5 @@
 defmodule DiscussWeb.Router do
-  use Discuss.Web, :router
+  use DiscussWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -18,6 +18,7 @@ defmodule DiscussWeb.Router do
 
     get "/", PageController, :index
     get "/topics/new", TopicController, :new
+    post "/topics", TopicController, :create
   end
 
   # Other scopes may use custom stacks.

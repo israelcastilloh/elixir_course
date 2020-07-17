@@ -1,13 +1,14 @@
-defmodule Discuss.Topic do
-  use Discuss.Web, :model
+defmodule DiscussWeb.Topic do
+  use DiscussWeb, :model
 
   schema "topics" do
     field :title, :string
   end
 
-  def changeset(struct, params \\ %{}) do #\\ to define default
+  def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:title]) #cast is a changeset
-    |> validate_required([:title]) #validates is a property of field, title/string
+    |> cast(params, [:title])
+    |> validate_required([:title])
   end
+
 end

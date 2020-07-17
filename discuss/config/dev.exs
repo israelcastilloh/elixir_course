@@ -2,11 +2,11 @@ use Mix.Config
 
 # Configure your database
 config :discuss, Discuss.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "israelcastillo",
+  password: "",
   database: "discuss_dev",
   hostname: "localhost",
-  show_sensitive_data_on_connection_error: true,
+  show_sensitive_data_on_connection_error: false,
   pool_size: 10
 
 # For development, we disable any cache and enable
