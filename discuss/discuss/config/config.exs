@@ -13,10 +13,10 @@ config :discuss,
 # Configures the endpoint
 config :discuss, DiscussWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "GWCXhlyXGL+E0u585/HbUvJutciBdmkByL/efFvdXPFkQiRIyMyuCHKxnAAr9uVU",
+  secret_key_base: "7zlJqBynSrUcCibx1A9WFUaeE2b1316R98YyRPSbMgTKIwjpEl2/F2tfH/YgMyav",
   render_errors: [view: DiscussWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Discuss.PubSub,
-  live_view: [signing_salt: "nuRS1VtM"]
+  live_view: [signing_salt: "YdqwEhtb"]
 
 # Configures Elixir's Logger
 config :logger, :console,
