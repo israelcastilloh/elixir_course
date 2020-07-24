@@ -2,8 +2,14 @@
 
 <ul class = "collection">
   <%= for topic <- @topics do %>
-    <li class = "collection-item"; style= "font-size:20px">
+    <li class = "collection-item"; style= "font-size:19px">
       <%=topic.title %>
+      <%= if @conn.assigns.user && @conn.assigns.user.id == topic.user_id do %>
+      <div class="right">
+        <%= link "Edit ", to: Routes.topic_path(@conn, :edit, topic) %>
+        <%= link "Delete", to: Routes.topic_path(@conn, :delete, topic), method: :delete %>
+      </div>
+      <% end %>
     </li>
   <% end %>
 </ul>

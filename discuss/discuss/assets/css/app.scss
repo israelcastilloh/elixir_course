@@ -2,23 +2,25 @@
 @import "./phoenix.css";
 
 
-.help-block {
+.invalid-feedback {
   color: red;
   text-transform: capitalize;
-  position: absolute;
-  top: 35px
+  font-size:20px
+
 }
 
-.form-group {
-  position: relative;
-  margin-bottom: 25px;
+.form-group{
+  margin-bottom: 20px;
+  margin-top: 35px;
 }
+
 /* Alerts and form errors */
 .alert {
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
+  color: red
 }
 .alert-info {
   color: #31708f;

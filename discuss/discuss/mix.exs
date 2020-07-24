@@ -20,7 +20,8 @@ defmodule Discuss.MixProject do
   def application do
     [
       mod: {Discuss.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger,
+      :gettext, :phoenix_ecto, :postgrex, :ueberauth, :ueberauth_github]
     ]
   end
 
@@ -44,7 +45,9 @@ defmodule Discuss.MixProject do
       {:telemetry_poller, "~> 0.4"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:ueberauth, "~> 0.3"},
+      {:ueberauth_github, "~> 0.4"}
     ]
   end
 
